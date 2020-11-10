@@ -1,9 +1,9 @@
-#Meme Generator:
+Meme Generator:
 	It's a simple meme generator built by using react where you make memes with built-in templates. Here's a<br><br/> snapshot of the starting page<br><br/>
 	
 	<img src="readmeImages/Sample-pic1.png" alt=" " />
 
-	###How to use:
+	How to use:
 			From previous snapshot it's quiet clear we simply press the button to make meme. When you press <br><br/>the button this snapshot appears:<br><br/>
 
 			<img src="readmeImages/Sample-pic2.png" alt=" " />
