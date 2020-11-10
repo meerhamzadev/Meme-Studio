@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav {
   background-color: #b30623;
   height: 5rem;
@@ -5,12 +6,233 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-column-gap: 30%;
+          column-gap: 30%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
+}
+
+@media (min-width: 447px) and (max-width: 620px) {
+  nav {
+    -webkit-column-gap: 20%;
+            column-gap: 20%;
+  }
+}
+
+@media (max-width: 447px) {
+  nav {
+    -webkit-column-gap: 10%;
+            column-gap: 10%;
+    font-size: 1.5rem;
+  }
+}
+
+nav img {
+  height: 5rem;
+  width: 10%;
+}
+
+@media (min-width: 447px) and (max-width: 620px) {
+  nav img {
+    width: 13%;
+  }
+}
+
+@media (max-width: 447px) {
+  nav img {
+    width: 20%;
+  }
+}
+
+#welcome-page {
+  text-align: center;
+}
+
+#welcome-page h2 {
+  color: white;
+}
+
+#welcome-page button {
+  background-color: #b30623;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: large;
+  border-radius: 2rem;
+  width: 15%;
+}
+
+#welcome-page button:hover {
+  background-color: #d32d49;
+  cursor: pointer;
+}
+
+#welcome-page button:hover::after {
+  content: "🥳";
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.inputBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20%;
+}
+
+.meme-template-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.meme-template-pic div {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  height: 35rem;
+  width: 40rem;
+}
+
+.meme-template-pic div h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+  color: black;
+  position: absolute;
+}
+
+.meme-template-pic div h2:first-child {
+  top: 0px;
+}
+
+.meme-template-pic div h2:last-child {
+  bottom: 15px;
+}
+
+.input-boxes {
+  margin-top: 1rem;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  font-size: medium;
+  padding: 1rem 0.5rem;
+  width: 30rem;
+  color: white;
+  border-bottom: 2px solid red;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.actions button {
+  background-color: #0b0bfa;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: large;
+  border-radius: 2rem;
+  width: 25%;
+}
+
+.actions button:hover {
+  background-color: #0909a5;
+  cursor: pointer;
+}
+
+.actions button:last-child {
+  background-color: #1eb81e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  text-decoration: none;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.actions button:last-child:hover {
+  background-color: #046104;
+  font-size: medium;
+}
+
+.actions button:last-child:hover::after {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1.2rem;
+  content: "\f019";
+}
+
+i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+
+i::after {
+  content: "\f013";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.actions-on-text {
+  width: 60rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.actions-on-text .textSize {
+  width: 150%;
+}
+
+.actions-on-text .textSize:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */
