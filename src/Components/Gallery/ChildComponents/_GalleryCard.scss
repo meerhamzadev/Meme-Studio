@@ -1,0 +1,70 @@
+.Card {
+    width        : 100%;
+    height       : 100%;
+    position     : relative;
+    border       : 1px solid #ccc;
+    box-shadow   : .2rem .2rem 1rem .3rem rgba(0, 0, 0, 0.4);
+    border-radius: .8rem;
+
+    &__Image {
+        width        : 100%;
+        height       : 100%;
+        border-radius: inherit;
+
+        img {
+            border-radius: inherit;
+            display      : block;
+            height       : 100%;
+            width        : 100%;
+            object-fit   : fill;
+        }
+    }
+
+    &__Overlay {
+        border-radius   : inherit;
+        position        : absolute;
+        left            : 0;
+        top             : 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width           : 100%;
+        height          : 100%;
+        opacity         : 0;
+        display         : flex;
+        flex-direction  : column;
+        justify-content : center;
+        align-items     : center;
+        gap             : 2rem;
+        font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding         : .5rem;
+        transform       : translateY(1rem);
+        transition      : opacity .7s, transform .7s;
+
+        &:hover {
+            opacity  : 1;
+            transform: translateY(0rem);
+        }
+
+        &__Name {
+            font-size     : 2.5rem;
+            color         : white;
+            letter-spacing: .3rem;
+        }
+
+        &__Button {
+            color           : white;
+            border-radius   : .5rem;
+            background-color: rgb(55, 55, 233);
+            padding         : .7rem 1rem;
+            font-size       : 1.7rem;
+            width           : auto;
+            border          : none;
+            outline         : none;
+            text-decoration : none;
+
+            &:hover {
+                background-color: rgb(31, 31, 160);
+                cursor          : pointer;
+            }
+        }
+    }
+}
