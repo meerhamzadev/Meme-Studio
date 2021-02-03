@@ -1,0 +1,39 @@
+.MemeTemplate {
+    margin-top: 3rem;
+
+    &__Text {
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom        : 3rem;
+        gap                  : 2rem;
+        align-items          : center;
+
+        &__TextBox {
+            width        : 35rem;
+            border       : none;
+            outline      : none;
+            border-bottom: .3rem solid blue;
+            font-size    : 1.9rem;
+            padding      : 2rem .3rem .3rem 0rem;
+            margin-left  : .8rem;
+        }
+
+        &__Slider {
+            width  : 40rem;
+            outline: none;
+            cursor : pointer;
+        }
+    }
+
+    &__Actions {
+        display        : flex;
+        justify-content: space-around;
+        margin-top     : 3rem;
+
+        &__Button {
+            background-color: blue;
+        }
+    }
+}
+
+@import './ChildComponent/Meme';
