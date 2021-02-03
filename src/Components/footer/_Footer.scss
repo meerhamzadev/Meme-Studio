@@ -1,0 +1,31 @@
+.Footer {
+    background-color: rgb(58, 58, 226);
+    margin-top      : 4rem;
+    display         : flex;
+    align-items     : center;
+    padding         : 1rem;
+    height          : 10rem;
+    font-size       : 1.8rem;
+    letter-spacing  : .2rem;
+    color           : white;
+    font-family     : Arial, Helvetica, sans-serif;
+    font-weight     : lighter;
+    justify-content : center;
+
+    a {
+        outline        : none;
+        text-decoration: none;
+        color          : rgb(235, 231, 225);
+
+        &:hover {
+            color: rgb(214, 212, 212);
+        }
+    }
+
+    &__Title__Name {
+        color        : white;
+        font-family  : 'Hachi Maru Pop', cursive;
+        padding-right: 1rem;
+    }
+
+}
