@@ -4,6 +4,7 @@
     justify-content: space-around;
     height         : 45rem;
     width          : 100%;
+    align-items    : center;
 
     &__Meme {
         position           : relative;
@@ -34,5 +35,8 @@
 
     }
 
+    &__ColorPicker {
+        height: 30rem;
+    }
 
 }

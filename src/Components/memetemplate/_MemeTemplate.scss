@@ -31,7 +31,31 @@
         margin-top     : 3rem;
 
         &__Button {
-            background-color: blue;
+            color           : white;
+            border-radius   : .5rem;
+            background-color: rgb(41, 204, 41);
+            padding         : .7rem 1rem;
+            font-size       : 1.7rem;
+            width           : auto;
+            border          : none;
+            outline         : none;
+            text-decoration : none;
+
+            &:hover {
+                background-color: rgb(25, 139, 25);
+                cursor          : pointer;
+            }
+
+            &:first-child {
+                background-color: rgb(55, 55, 233);
+                width           : 10rem;
+                text-align      : center;
+
+                &:hover {
+                    background-color: rgb(31, 31, 160);
+
+                }
+            }
         }
     }
 }
