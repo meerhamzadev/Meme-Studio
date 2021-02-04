@@ -7,6 +7,7 @@
     &__logo {
         height          : 100%;
         background-color: white;
+        outline         : none;
 
         &__image {
             width     : 100%;
@@ -29,35 +30,6 @@
             font-family : 'Hachi Maru Pop', cursive;
             font-weight : bolder;
             padding-left: 2rem;
-        }
-
-        &__Search {
-            border-radius: .4rem;
-
-            &__Box {
-                font-size    : 1.5rem;
-                width        : 30rem;
-                height       : 3rem;
-                padding-left : .4rem;
-                border-radius: .4rem 0rem 0rem .4rem;
-                border       : none;
-                outline      : none;
-            }
-
-            &__Button {
-                border-radius   : 0rem .4rem .4rem 0rem;
-                background-color: rgb(44, 236, 44);
-                height          : 3rem;
-                width           : 3rem;
-                font-size       : 1.5rem;
-                border          : none;
-                outline         : none;
-
-                &:hover {
-                    background-color: rgb(26, 172, 26);
-                    cursor          : pointer;
-                }
-            }
         }
     }
 }
