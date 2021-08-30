@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Meme from './ChildComponent/Meme';
-import { SketchPicker } from 'react-color';
 import domtoimage from 'dom-to-image';
 import { Link } from 'react-router-dom';
 import { saveAs } from 'file-saver';
@@ -9,13 +8,12 @@ const MemeTemplate = () => {
     const imageSource = window.location.href.slice(window.location.href.indexOf('_') + 1, window.location.href.length);
     const [topText, setToptext] = useState(" ");
     const [bottomText, setBottomtext] = useState(" ");
-    // const [showColorpicker, updateShowcolorPicker] = useState(false)
     const [textSize, setTextsize] = useState(20)
 
     const download = () => {
         domtoimage.toBlob(document.getElementById('Meme'))
             .then((blob) => {
-                window.saveAs(blob, 'Your-meme.png');
+                saveAs(blob, 'Your-meme.png');
             });
     }
 
@@ -45,8 +43,6 @@ const MemeTemplate = () => {
                     className="MemeTemplate__Text__TextBox"
                     onChange={e => setBottomtext(e.target.value)}
                 />
-                {/* <SketchPicker color={Color}
-                    onChange={updateColor => setColor(updateColor.hex)} /> */}
 
             </div>
 
