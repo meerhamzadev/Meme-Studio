@@ -1,5 +1,5 @@
 ## Meme Studio
--A meme gallery(non-responsive) having loads of famous templates so users can make funny memes using these templates.
+- A meme gallery(non-responsive) having loads of famous templates so users can make funny memes using these templates.
 ## ⚡ Stack
    -  React 
    -  SCSS
