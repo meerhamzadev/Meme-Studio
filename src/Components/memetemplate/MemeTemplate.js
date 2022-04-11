@@ -31,10 +31,10 @@ const MemeTemplate = () => {
                 />
 
 
-                <input className="textSize"
+                <input
                     value={textSize}
                     type="range" min="0" max="100"
-                    className="MemeTemplate__Text__Slider"
+                    className="textSize MemeTemplate__Text__Slider"
                     onChange={e => setTextsize(e.target.value)} />
 
                 <input
